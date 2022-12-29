@@ -3,34 +3,58 @@
 '''
 author: Henrik Schönemann
 created on: 2022-12-29
-coding: utf-8
+
+Copyright (C) 2022 Henrik Schönemann
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+Modified 2022-12-29 by using code by Joerg Jaspert <joerg@ganneff.de>
+https://codeberg.org/Fulda.Social/herecomesthesun/src/branch/main/Bot_HereComesTheSun_Fulda.py
 
 https://github.com/halcy/Mastodon.py
-https://docs.stormglass.io/#/
+API: https://docs.stormglass.io/#/
 '''
-
 
 import requests
 from datetime import datetime, timedelta, time
 from mastodon import Mastodon
 
+# Modify as needed
+loc_name = "Berlin"
+loc_lat = 52.520008
+loc_lng = 13.404954
+
+
+# Need an API key, get it from stormglass.io and place it into API_key.txt
+with open('API_key.txt') as f:
+    key = f.readlines()[0].rstrip()
+
 today = datetime.now()
 yesterday = today - timedelta(days = 1)
 
-
-with open('/home/schoeneh/mastodon_bot/herecomesthesun_berlin/API_key.txt') as f:
-    key = f.readlines()
-
+#Asking API
 response = requests.get(
   'https://api.stormglass.io/v2/astronomy/point',
   params={
-    'lat': 52.520008,
-    'lng': 13.404954,
+    'lat': loc_lat,
+    'lng': loc_lng,
     'start': yesterday,
     'end': today,
   },
   headers={
-    'Authorization': key[0]
+    'Authorization': key[0] 
   }
 )
 
@@ -90,7 +114,17 @@ else:
     and_hour = True
 
 
-toot = "#HereComesTheSun 🌞 for #Berlin on " + day_1.strftime('%a, %b %d') + ":\nThe sun rises at " + sunrise_1.strftime('%H:%M') + " and sets at " + sunset_1.strftime('%H:%M') + ".\nOur (theoretical) maximum amount of daylight will be " + str(delta_1) + ".\n\n"
+toot = (
+    "#HereComesTheSun 🌞 for #" + loc_name +" on "
+    + day_1.strftime("%a, %b %d")
+    + ":\nThe sun rises at "
+    + sunrise_1.strftime("%H:%M")
+    + " and sets at "
+    + sunset_1.strftime("%H:%M")
+    + ".\nOur (theoretical) maximum amount of daylight will be "
+    + str(delta_1)
+    + ".\n\n"
+)
 
 if and_min == False and and_hour == False:
     toot = toot + "That's " + diff_sec_str + " more than yesterday!"
@@ -108,6 +142,5 @@ elif and_sec == True and and_min == True and and_hour == True:
     toot = toot + "That's " + diff_hour_str + ", " + diff_min_str + " and " + diff_sec_str +" more than yesterday!"
 
 
-mastodon = Mastodon(access_token = '/home/schoeneh/mastodon_bot/herecomesthesun_berlin/pytooter_usercred.secret')
+mastodon = Mastodon(access_token = 'pytooter_usercred.secret')
 mastodon.toot(toot)
-
