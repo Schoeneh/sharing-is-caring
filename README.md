@@ -1,2 +1,2 @@
 # Snippets
-A public collection of small projects
+A public collection of my small projects
