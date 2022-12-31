@@ -59,3 +59,4 @@ $RECYCLE.BIN/
 # https://raw.githubusercontent.com/github/gitignore/main/Global/Windows.gitignore
 # LibreOffice locks
 .~lock.*#
+*.bak
