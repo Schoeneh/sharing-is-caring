@@ -45,9 +45,10 @@ mastodon = Mastodon(access_token = 'pytooter_usercred.secret')
 today = datetime.now()
 yesterday = today - timedelta(days = 1)
 data_check = False
+req_count = 0
 
 #Asking API
-while data_check == False:
+while data_check == False and req_count < 2:
     response = requests.get(
       'https://api.stormglass.io/v2/astronomy/point',
       params={
@@ -60,8 +61,8 @@ while data_check == False:
         'Authorization': key[0]
       }
     )
-
     json_data = response.json()
+    req_count = req_count + 1
 
     if 'data' in json_data:
         data_check = True 
