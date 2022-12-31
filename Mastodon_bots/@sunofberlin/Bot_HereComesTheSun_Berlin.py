@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # coding: utf-8
 '''
-author: Henrik Schönemann
+author: Henrik Schoenemann
 created on: 2022-12-29
 
-Copyright (C) 2022 Henrik Schönemann
+Copyright (C) 2022 Henrik Schoenemann
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -39,28 +39,33 @@ loc_lng = 13.404954
 
 # Need an API key, get it from stormglass.io and place it into API_key.txt
 with open('API_key.txt') as f:
-    key = f.readlines()[0].rstrip()
+    key = f.readlines()
 
+mastodon = Mastodon(access_token = 'pytooter_usercred.secret')
 today = datetime.now()
 yesterday = today - timedelta(days = 1)
+data_check = False
 
 #Asking API
-response = requests.get(
-  'https://api.stormglass.io/v2/astronomy/point',
-  params={
-    'lat': loc_lat,
-    'lng': loc_lng,
-    'start': yesterday,
-    'end': today,
-  },
-  headers={
-    'Authorization': key[0] 
-  }
-)
+while data_check == False:
+    response = requests.get(
+      'https://api.stormglass.io/v2/astronomy/point',
+      params={
+        'lat': loc_lat,
+        'lng': loc_lng,
+        'start': yesterday,
+        'end': today,
+      },
+      headers={
+        'Authorization': key[0]
+      }
+    )
 
-json_data = response.json()
+    json_data = response.json()
 
-
+    if 'data' in json_data:
+        data_check = True 
+    
 day_0 = datetime.fromisoformat(json_data['data'][0]['time'])
 sunrise_0 = datetime.fromisoformat(json_data['data'][0]['sunrise'])
 sunrise_0 = sunrise_0 + timedelta(hours = 1)
@@ -121,7 +126,7 @@ toot = (
     + sunrise_1.strftime("%H:%M")
     + " and sets at "
     + sunset_1.strftime("%H:%M")
-    + ".\nOur (theoretical) maximum amount of daylight will be "
+    + ".\nOur (theoretical) max. amount of sunlight will be "
     + str(delta_1)
     + ".\n\n"
 )
@@ -141,6 +146,4 @@ elif and_sec == False and and_min == True and and_hour == True:
 elif and_sec == True and and_min == True and and_hour == True:
     toot = toot + "That's " + diff_hour_str + ", " + diff_min_str + " and " + diff_sec_str +" more than yesterday!"
 
-
-mastodon = Mastodon(access_token = 'pytooter_usercred.secret')
 mastodon.toot(toot)
