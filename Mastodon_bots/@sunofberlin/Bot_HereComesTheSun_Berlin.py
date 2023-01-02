@@ -68,16 +68,12 @@ while data_check == False and req_count < 2:
         data_check = True 
     
 day_0 = datetime.fromisoformat(json_data['data'][0]['time'])
-sunrise_0 = datetime.fromisoformat(json_data['data'][0]['sunrise'])
-sunrise_0 = sunrise_0 + timedelta(hours = 1)
-sunset_0 = datetime.fromisoformat(json_data['data'][0]['sunset'])
-sunset_0 = sunset_0 + timedelta(hours = 1)
+sunrise_0 = datetime.fromisoformat(json_data['data'][0]['sunrise']).astimezone()
+sunset_0 = datetime.fromisoformat(json_data['data'][0]['sunset']).astimezone()
 
 day_1 = datetime.fromisoformat(json_data['data'][1]['time'])
-sunrise_1 = datetime.fromisoformat(json_data['data'][1]['sunrise'])
-sunrise_1 = sunrise_1 + timedelta(hours = 1)
-sunset_1 = datetime.fromisoformat(json_data['data'][1]['sunset'])
-sunset_1 = sunset_1 + timedelta(hours = 1)
+sunrise_1 = datetime.fromisoformat(json_data['data'][1]['sunrise']).astimezone()
+sunset_1 = datetime.fromisoformat(json_data['data'][1]['sunset']).astimezone()
 
 delta_0 = sunset_0 - sunrise_0
 delta_1 = sunset_1 - sunrise_1
