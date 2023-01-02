@@ -123,9 +123,7 @@ toot = (
     + sunrise_1.strftime("%H:%M")
     + " and sets at "
     + sunset_1.strftime("%H:%M")
-    + ".\nOur (theoretical) max. amount of sunlight will be "
-    + str(delta_1)
-    + ".\n\n"
+    + ".\nWe will see " + str(delta_1) + "of daylight.\n\n"
 )
 
 if and_min == False and and_hour == False:
