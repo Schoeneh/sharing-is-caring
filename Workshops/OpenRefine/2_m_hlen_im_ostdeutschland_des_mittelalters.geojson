@@ -1,0 +1,2000 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "7",
+        "geometry": "Point",
+        "name": "Beelitz",
+        "Jahr der Urkunde": "997",
+        "layer": "10. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.970004,
+          52.236358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "1",
+        "geometry": "Point",
+        "name": "Choren",
+        "Jahr der Urkunde": "983",
+        "layer": "10. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.241067,
+          51.102072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "8",
+        "geometry": "Point",
+        "name": "Nerchau",
+        "Jahr der Urkunde": "997",
+        "layer": "10. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.788698,
+          51.270929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "9",
+        "geometry": "Point",
+        "name": "Niemtsch",
+        "Jahr der Urkunde": "1000",
+        "layer": "10. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.983216,
+          51.494491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "0",
+        "geometry": "Point",
+        "name": "Nienburg (Saale)",
+        "Jahr der Urkunde": "981",
+        "layer": "10. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.767553,
+          51.837156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "4",
+        "geometry": "Point",
+        "name": "Oeglitzsch",
+        "Jahr der Urkunde": "993",
+        "layer": "10. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.032608,
+          51.24402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "5",
+        "geometry": "Point",
+        "name": "Potsdam",
+        "Jahr der Urkunde": "993",
+        "layer": "10. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.05914,
+          52.400931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "2",
+        "geometry": "Point",
+        "name": "Prießnitz",
+        "Jahr der Urkunde": "983",
+        "layer": "10. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.747585,
+          51.374338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "3",
+        "geometry": "Point",
+        "name": "Roßwein",
+        "Jahr der Urkunde": "985",
+        "layer": "10. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.211244,
+          51.083886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "6",
+        "geometry": "Point",
+        "name": "Werben",
+        "Jahr der Urkunde": "993",
+        "layer": "10. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.341456,
+          52.247659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "10",
+        "geometry": "Point",
+        "name": "Arneburg",
+        "Jahr der Urkunde": "1006",
+        "layer": "11. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.003502,
+          52.674454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "11",
+        "geometry": "Point",
+        "name": "Gautsch",
+        "Jahr der Urkunde": "1028",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.875732,
+          50.903033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "19",
+        "geometry": "Point",
+        "name": "Giersleben",
+        "Jahr der Urkunde": "1049",
+        "layer": "11. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.563077,
+          51.764123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "12",
+        "geometry": "Point",
+        "name": "Groitschen",
+        "Jahr der Urkunde": "1030",
+        "layer": "11. Jh",
+        "state": "Thüringen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.169927,
+          50.923959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "15",
+        "geometry": "Point",
+        "name": "Lieberwolkwitzer Markt",
+        "Jahr der Urkunde": "1040",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.415924,
+          51.304433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "13",
+        "geometry": "Point",
+        "name": "Meinitz",
+        "Jahr der Urkunde": "1030",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.923363,
+          51.142288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "17",
+        "geometry": "Point",
+        "name": "Meißen",
+        "Jahr der Urkunde": "1046",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.458956,
+          51.176303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "20",
+        "geometry": "Point",
+        "name": "Nesseln (bei Wildenheim)",
+        "Jahr der Urkunde": "1050",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.277222,
+          51.433464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "14",
+        "geometry": "Point",
+        "name": "Oetsch [Oetzsch]",
+        "Jahr der Urkunde": "1031",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66748,
+          50.972265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "24",
+        "geometry": "Point",
+        "name": "Sandersleben",
+        "Jahr der Urkunde": "1086",
+        "layer": "11. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.578142,
+          51.675059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "16",
+        "geometry": "Point",
+        "name": "Schloß Püchau",
+        "Jahr der Urkunde": "1040",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.652615,
+          51.400079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "23",
+        "geometry": "Point",
+        "name": "Spergau",
+        "Jahr der Urkunde": "1066",
+        "layer": "11. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.009415,
+          51.289509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "21",
+        "geometry": "Point",
+        "name": "Windorf",
+        "Jahr der Urkunde": "1050",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": "Nuwindorph"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.325386,
+          51.296073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "22",
+        "geometry": "Point",
+        "name": "Wintersdorf",
+        "Jahr der Urkunde": "1064",
+        "layer": "11. Jh",
+        "state": "Thüringen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3563,
+          51.0546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "18",
+        "geometry": "Point",
+        "name": "Zschaitz",
+        "Jahr der Urkunde": "1046",
+        "layer": "11. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.162933,
+          51.16819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "27",
+        "geometry": "Point",
+        "name": "bei Freiberg",
+        "Jahr der Urkunde": "1162",
+        "layer": "12. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.343589,
+          50.926111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "26",
+        "geometry": "Point",
+        "name": "Havelberg",
+        "Jahr der Urkunde": "1150",
+        "layer": "12. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.201367,
+          52.463949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "25",
+        "geometry": "Point",
+        "name": "Jerichow",
+        "Jahr der Urkunde": "1144",
+        "layer": "12. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.025753,
+          52.497636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "29",
+        "geometry": "Point",
+        "name": "Jerichow",
+        "Jahr der Urkunde": "1172",
+        "layer": "12. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": "tria molendina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.025753,
+          52.497636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "30",
+        "geometry": "Point",
+        "name": "Klingemühle ",
+        "Jahr der Urkunde": "1173",
+        "layer": "12. Jh",
+        "state": "Brandenburg",
+        "Abweichung": "in Clinke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.430919,
+          52.100647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "31",
+        "geometry": "Point",
+        "name": "Klingemühle ",
+        "Jahr der Urkunde": "1179",
+        "layer": "12. Jh",
+        "state": "Brandenburg",
+        "Abweichung": "in Klinke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.444275,
+          52.100601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33",
+        "geometry": "Point",
+        "name": "Nahmitz",
+        "Jahr der Urkunde": "1193",
+        "layer": "12. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.725493,
+          52.337291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "32",
+        "geometry": "Point",
+        "name": "Röxe",
+        "Jahr der Urkunde": "1188",
+        "layer": "12. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.843994,
+          52.591543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "28",
+        "geometry": "Point",
+        "name": "Ziethen ",
+        "Jahr der Urkunde": "1168",
+        "layer": "12. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.676605,
+          53.87925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "67",
+        "geometry": "Point",
+        "name": "Alt Jargenow ",
+        "Jahr der Urkunde": "1270",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.321525,
+          53.963627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "53",
+        "geometry": "Point",
+        "name": "Berlin Wedding",
+        "Jahr der Urkunde": "1251",
+        "layer": "13. Jh",
+        "state": "Berlin",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.373666,
+          52.543451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "75",
+        "geometry": "Point",
+        "name": "Berlinchen bei Wittstock",
+        "Jahr der Urkunde": "1278",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.966118,
+          53.221637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "39",
+        "geometry": "Point",
+        "name": "Bernau (bei Berlin)",
+        "Jahr der Urkunde": "1230",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.591942,
+          52.675385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "91",
+        "geometry": "Point",
+        "name": "Busow",
+        "Jahr der Urkunde": "1288",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "molendinum merice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.793092,
+          53.784033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "82",
+        "geometry": "Point",
+        "name": "Demmin",
+        "Jahr der Urkunde": "1281",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.030753,
+          53.902903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "46",
+        "geometry": "Point",
+        "name": "Dranser See  [Wittstock/Dosse]",
+        "Jahr der Urkunde": "1244",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.637024,
+          53.19575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "41",
+        "geometry": "Point",
+        "name": "Dranser See [Wittstock/Dosse]",
+        "Jahr der Urkunde": "1233",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.627411,
+          53.190608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "44",
+        "geometry": "Point",
+        "name": "Eldena ",
+        "Jahr der Urkunde": "1241",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.468243,
+          54.072121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "60",
+        "geometry": "Point",
+        "name": "Franzburg",
+        "Jahr der Urkunde": "1263",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8833,
+          54.1833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "57",
+        "geometry": "Point",
+        "name": "Franzburg ",
+        "Jahr der Urkunde": "1257",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "molendinum claustrum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8833,
+          54.1833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "47",
+        "geometry": "Point",
+        "name": "Friedland ",
+        "Jahr der Urkunde": "1244",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.548889,
+          53.66946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "93",
+        "geometry": "Point",
+        "name": "Gardelegen",
+        "Jahr der Urkunde": "1290",
+        "layer": "13. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": "molendinum ante valuam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.394734,
+          52.523143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "50",
+        "geometry": "Point",
+        "name": "Gartz",
+        "Jahr der Urkunde": "1248",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": "quatuor molendina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.383258,
+          53.209822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "78",
+        "geometry": "Point",
+        "name": "Gerbodenhagen b. Stralsund",
+        "Jahr der Urkunde": "1280",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "molendinum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.049285,
+          54.309605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "79",
+        "geometry": "Point",
+        "name": "Gerbodenhagen b. Stralsund",
+        "Jahr der Urkunde": "1280",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "mole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.049285,
+          54.309605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "80",
+        "geometry": "Point",
+        "name": "Gerdin",
+        "Jahr der Urkunde": "1280",
+        "layer": "13. Jh",
+        "state": "Polen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.803026,
+          54.064097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "38",
+        "geometry": "Point",
+        "name": "Görke",
+        "Jahr der Urkunde": "1227",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.638093,
+          53.84755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "96",
+        "geometry": "Point",
+        "name": "Grammendorf",
+        "Jahr der Urkunde": "1291",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.901008,
+          54.031063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "59",
+        "geometry": "Point",
+        "name": "Greifswald",
+        "Jahr der Urkunde": "1262",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.381524,
+          54.095791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "63",
+        "geometry": "Point",
+        "name": "Greifswald",
+        "Jahr der Urkunde": "1265",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.381524,
+          54.095791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "81",
+        "geometry": "Point",
+        "name": "Greifswald",
+        "Jahr der Urkunde": "1280",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "molendina mehrere"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.375862,
+          54.099034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "94",
+        "geometry": "Point",
+        "name": "Greifswald",
+        "Jahr der Urkunde": "1290",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "molendinum venti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.381524,
+          54.095791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "35",
+        "geometry": "Point",
+        "name": "Grimma",
+        "Jahr der Urkunde": "1203",
+        "layer": "13. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.728751,
+          51.238338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "61",
+        "geometry": "Point",
+        "name": "Groß Kordshagen",
+        "Jahr der Urkunde": "1264",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.84097,
+          54.33268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "86",
+        "geometry": "Point",
+        "name": "Grubenhagen",
+        "Jahr der Urkunde": "1284",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.326957,
+          54.028948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "73",
+        "geometry": "Point",
+        "name": "Gruel",
+        "Jahr der Urkunde": "1276",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.571871,
+          54.195879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "89",
+        "geometry": "Point",
+        "name": "Gunzien n Usedom",
+        "Jahr der Urkunde": "1286",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.948487,
+          53.932249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "68",
+        "geometry": "Point",
+        "name": "Jargenow",
+        "Jahr der Urkunde": "1270",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.317903,
+          53.954993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "40",
+        "geometry": "Point",
+        "name": "Karow (Plau am See)",
+        "Jahr der Urkunde": "1232",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.450012,
+          54.400548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "37",
+        "geometry": "Point",
+        "name": "Kemnitz",
+        "Jahr der Urkunde": "1209",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.528365,
+          54.074834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "83",
+        "geometry": "Point",
+        "name": "Kemnitz",
+        "Jahr der Urkunde": "1281",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.528365,
+          54.074834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "49",
+        "geometry": "Point",
+        "name": "Klingemühle ",
+        "Jahr der Urkunde": "1247",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": "molendinum Clinke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.430919,
+          52.100647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "95",
+        "geometry": "Point",
+        "name": "Kottewitz",
+        "Jahr der Urkunde": "1290",
+        "layer": "13. Jh",
+        "state": "Sachsen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.389629,
+          51.080075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "58",
+        "geometry": "Point",
+        "name": "Kyritz ",
+        "Jahr der Urkunde": "1259",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "exstructio molendinorum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.331585,
+          53.36573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "97",
+        "geometry": "Point",
+        "name": "Loburg",
+        "Jahr der Urkunde": "1291",
+        "layer": "13. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.064617,
+          52.115843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "102",
+        "geometry": "Point",
+        "name": "Marlow",
+        "Jahr der Urkunde": "1298",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.573157,
+          54.145158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "101",
+        "geometry": "Point",
+        "name": "Martenshagen",
+        "Jahr der Urkunde": "1294",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.673889,
+          54.294677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "70",
+        "geometry": "Point",
+        "name": "Mirow",
+        "Jahr der Urkunde": "1273",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.800712,
+          53.287611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34",
+        "geometry": "Point",
+        "name": "Nahmitz",
+        "Jahr der Urkunde": "1201",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.725493,
+          52.337291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "36",
+        "geometry": "Point",
+        "name": "Nahmitz",
+        "Jahr der Urkunde": "1205",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.725493,
+          52.337291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "87",
+        "geometry": "Point",
+        "name": "Neukölln/Berlin",
+        "Jahr der Urkunde": "1285",
+        "layer": "13. Jh",
+        "state": "Berlin",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.453699,
+          52.45889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "43",
+        "geometry": "Point",
+        "name": "Ossig",
+        "Jahr der Urkunde": "1236",
+        "layer": "13. Jh",
+        "state": "Sachsen-Anhalt",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.09978,
+          50.99676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "104",
+        "geometry": "Point",
+        "name": "Papenbruch",
+        "Jahr der Urkunde": "1300",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.43652,
+          53.123476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "103",
+        "geometry": "Point",
+        "name": "Perleberg",
+        "Jahr der Urkunde": "1299",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.864705,
+          53.081115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "84",
+        "geometry": "Point",
+        "name": "Repente",
+        "Jahr der Urkunde": "1283",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.823755,
+          53.167401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "54",
+        "geometry": "Point",
+        "name": "Rottstock ",
+        "Jahr der Urkunde": "1251",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.352162,
+          52.197761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "51",
+        "geometry": "Point",
+        "name": "Salvei-Bach [Gartz]",
+        "Jahr der Urkunde": "1248",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.391747,
+          53.208089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "98",
+        "geometry": "Point",
+        "name": "Schilde",
+        "Jahr der Urkunde": "1291",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.77103,
+          53.050124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "76",
+        "geometry": "Point",
+        "name": "Schönfeld [heute Żarczyn]",
+        "Jahr der Urkunde": "1278",
+        "layer": "13. Jh",
+        "state": "Polen",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.553117,
+          53.093203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "64",
+        "geometry": "Point",
+        "name": "Schwedt [an der Oder]",
+        "Jahr der Urkunde": "1265",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.334412,
+          53.052771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "52",
+        "geometry": "Point",
+        "name": "Schwinge ",
+        "Jahr der Urkunde": "1250",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.117676,
+          54.040038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "45",
+        "geometry": "Point",
+        "name": "Starkow ",
+        "Jahr der Urkunde": "1242",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.545418,
+          54.038559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "55",
+        "geometry": "Point",
+        "name": "Stralsund ",
+        "Jahr der Urkunde": "1256",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.083515,
+          54.31422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "85",
+        "geometry": "Point",
+        "name": "Stralsund ",
+        "Jahr der Urkunde": "1283",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "Wolbrectesmolen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.082649,
+          54.316618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "99",
+        "geometry": "Point",
+        "name": "Stralsund ",
+        "Jahr der Urkunde": "1291",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "m. monachorum molendina wintmolen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.082649,
+          54.316618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "100",
+        "geometry": "Point",
+        "name": "Stralsund ",
+        "Jahr der Urkunde": "1293",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "m. ante valuam Knepesdor ventimolendina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.090015,
+          54.318962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "74",
+        "geometry": "Point",
+        "name": "Strelow",
+        "Jahr der Urkunde": "1277",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.966118,
+          54.049186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "88",
+        "geometry": "Point",
+        "name": "Tornow",
+        "Jahr der Urkunde": "1285",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.285581,
+          53.06193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "92",
+        "geometry": "Point",
+        "name": "Tribohm",
+        "Jahr der Urkunde": "1288",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "molendinum superior"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.60497,
+          54.198575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "65",
+        "geometry": "Point",
+        "name": "Usedom",
+        "Jahr der Urkunde": "1267",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.323995,
+          53.874957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "62",
+        "geometry": "Point",
+        "name": "Vierow ",
+        "Jahr der Urkunde": "1264",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.219753,
+          53.983993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "69",
+        "geometry": "Point",
+        "name": "Vierow ",
+        "Jahr der Urkunde": "1270",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.224449,
+          53.986175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "66",
+        "geometry": "Point",
+        "name": "Vierraden ",
+        "Jahr der Urkunde": "1269",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": "molendinum ad quatuor rotas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.298706,
+          53.097323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "77",
+        "geometry": "Point",
+        "name": "Voigtsdorf",
+        "Jahr der Urkunde": "1279",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.926348,
+          54.039037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "90",
+        "geometry": "Point",
+        "name": "Voigtsdorf",
+        "Jahr der Urkunde": "1286",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": "Nygenmolen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.926348,
+          54.039037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "72",
+        "geometry": "Point",
+        "name": "Wilsen",
+        "Jahr der Urkunde": "1274",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.064756,
+          53.376224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "71",
+        "geometry": "Point",
+        "name": "Wusterbode",
+        "Jahr der Urkunde": "1273",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.621006,
+          54.117106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "42",
+        "geometry": "Point",
+        "name": "Zarow ",
+        "Jahr der Urkunde": "1235",
+        "layer": "13. Jh",
+        "state": "Mecklenburg-Vorpommern",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.998747,
+          53.7451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "48",
+        "geometry": "Point",
+        "name": "Zechlin",
+        "Jahr der Urkunde": "1244",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.76415,
+          53.161762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "56",
+        "geometry": "Point",
+        "name": "Zechlin ",
+        "Jahr der Urkunde": "1256",
+        "layer": "13. Jh",
+        "state": "Brandenburg",
+        "Abweichung": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.76415,
+          53.161762
+        ]
+      }
+    }
+  ]
+}
