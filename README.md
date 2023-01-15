@@ -1,5 +1,5 @@
 # Sharing is Caring
-A public collection of my small projects
+A public collection of some of my projects.
 
 ## Bots: Mastodon
 ### @sunofberlin
