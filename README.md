@@ -13,3 +13,6 @@ Account: https://botsin.space/@radccoonsbot
 
 ## Workshops
 ### OpenRefine
+
+## Notes
+### 2023-17-01 'Chat-GPT - Fluch oder Segen generativer KIs für die universitäre Lehre'
