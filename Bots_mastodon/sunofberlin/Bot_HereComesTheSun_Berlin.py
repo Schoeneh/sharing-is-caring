@@ -104,9 +104,6 @@ sunset_1 = datetime.fromisoformat(json_data['data'][1]['sunset']).astimezone()
 delta_0 = sunset_0 - sunrise_0
 delta_1 = sunset_1 - sunrise_1
 
-diff_neg = False
-diff = delta_1 - delta_0
-
 ### Dealing with winter/summer solstice ###
 epoch = Sun.get_equinox_solstice(datetime.now().year, target="winter")
 y, m, d, h, mi, s = epoch.get_full_date()
@@ -148,6 +145,9 @@ if exists("./data/data_winter_solstice_" + datetime.now().strftime('%Y') + ".jso
     with open(file_winter_solstice, 'w') as f:
         json.dump(json_data_winter_solstice, f)
 
+
+diff_neg = False
+diff = delta_1 - delta_0
 
 ### Generating text of toot ###
 toot_lines = [
