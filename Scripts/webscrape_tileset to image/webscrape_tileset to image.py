@@ -1,3 +1,4 @@
+import sys
 import os
 import requests
 from PIL import Image
@@ -9,6 +10,11 @@ url = "https://www.berliner-stadtplansammlung.de/images/maps/Abbildungen/Berlin%
 zoom = 5 #zoom level
 cols = 31 #max y-value of leaflet-tiles
 rows = 27 #max x-value of leaflet-tiles
+
+#Sets working directory to directory of this python file
+os.chdir(sys.path[0])
+
+uniquePixels = set(Image.open(f'images/{str(zoom)}/0/0.png').getdata())
 
 print("Step 1/2: Downloading all non-empty tiles")
 
@@ -50,3 +56,4 @@ if not os.path.exists(f'images/image_zoom{str(zoom)}.png'):
 
 print("---")
 print("Finished!")
+'''
