@@ -1,6 +1,9 @@
 # Secret
 .secret
 
+# Ignore specific data-directories in repo
+/Scripts/webscrape_tileset to image/Images
+
 # Notepad++
 .bak
 
