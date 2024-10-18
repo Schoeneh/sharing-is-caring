@@ -15,8 +15,8 @@ print("Step 1/2: Downloading the Tiles")
 if not os.path.exists(f"images/{str(zoom)}"):
     os.makedirs(f"images/{str(zoom)}")
 
-for y in tqdm(range(cols+1), desc="Downloading Columns"):
-    for x in tqdm(range(rows+1), desc="Downloading Row", leave=False):
+for y in tqdm(range(cols+1), desc="Downloading columns"):
+    for x in tqdm(range(rows+1), desc="Downloading row", leave=False):
         if not os.path.exists(f"images/{str(zoom)}/{str(y)}"):
             os.makedirs(f"images/{str(zoom)}/{str(y)}")
 
@@ -27,7 +27,7 @@ for y in tqdm(range(cols+1), desc="Downloading Columns"):
             f.close()
 
 print("---")
-print("Step 2/2: Stitching the Image")
+print("Step 2/2: Stitching the image")
 c_cols = len(next(os.walk(f'images/{zoom}'))[1])
 c_rows = len(next(os.walk(f'images/{zoom}/0'))[2])
 
@@ -45,7 +45,7 @@ if not os.path.exists(f'images/image_zoom{str(zoom)}.png'):
     for img in tqdm(range(c_cols), desc="Stitching whole Image"):
         result.paste(im=Image.open(f'images/{str(zoom)}/row{str(img)}.png'), box=(img_width * img, 0))
     
-    with yaspin(text="Saving Image... (This can take a while)") as spinner:
+    with yaspin(text="Saving image... (This may take a while)") as spinner:
         result.save(f'images/image_zoom{str(zoom)}.png')
 
 print("---")
