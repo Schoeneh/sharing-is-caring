@@ -10,7 +10,7 @@ zoom = 5 #zoom level
 cols = 31 #max y-value of leaflet-tiles
 rows = 27 #max x-value of leaflet-tiles
 
-print("Step 1/2: Downloading the Tiles")
+print("Step 1/2: Downloading all non-empty tiles")
 
 if not os.path.exists(f"images/{str(zoom)}"):
     os.makedirs(f"images/{str(zoom)}")
