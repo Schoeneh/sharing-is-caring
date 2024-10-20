@@ -11,8 +11,6 @@ from yaspin import yaspin
 os.chdir(sys.path[0])
 
 url_check = True
-url_orig = "https://www.berliner-stadtplansammlung.de/index.php/ansichten/die-stadt-berlin-im-jahre-1690/die-stadt-berlin-im-jahre-1690-04-schloss-und-schlossplatz"
-
 while url_check:
     url_in = input(f"Type/Paste URL of website to scrape: ")
     if url_in.startswith("http"):
