@@ -6,22 +6,49 @@ from tqdm import tqdm
 from yaspin import yaspin
 
 url = "https://www.berliner-stadtplansammlung.de/images/maps/Abbildungen/Berlin%201690%20Stridbeck/Blatt%204%20Schloss%20und%20Schlossplatz"
-img_type = ".png"
-zoom = 6 #zoom level
-#Assumption: tiles will all have the same width and height (usually 256px*256px)
+img_type = ".png" #leaflet should always be png (https://leafletjs.com/reference.html#tilelayer)
 
 #Sets working directory to directory of this file
 os.chdir(sys.path[0])
 
-print("Step 1/2: Downloading all non-empty tiles")
-step_download = True
+#Checking URL
+with yaspin(text="Checking URL", side="right") as spinner:
+    check_url = requests.get(f"{url}/0/0/0.png")
 
-skip = input("Skip download? (type 'skip'): ")
-if skip == "skip":
-    step_download = False
+if not check_url.status_code == 200:
+    sys.exit(f"No tiles found for: {url}")
+
+
+#Checking available zoom-levels
+with yaspin(text="Checking available zoom-levels", side="right", timer=True) as spinner:
+    check_zoom = True
+    zoom_max = 0
+    while check_zoom:
+        test = requests.get(f"{url}/{zoom_max}/0/0{img_type}")
+        if test.status_code == 200:
+            zoom_max = zoom_max+1
+        else:
+            zoom_max = zoom_max-1
+            check_zoom = False
+
+
+print("Step 1/2: Downloading all non-empty tiles")
+confirmation = True
+step_download = True
+while confirmation:
+    zoom = input(f"Found zoom-levels 0 to {zoom_max}. Download tiles at which zoom-level? (type number or 'skip'): ")
+    if int(zoom) in range(0,zoom_max):
+        zoom = int(zoom)
+        confirmation = False
+    elif zoom == "skip":
+        step_download = False
+        confirmation = False
+    else:
+        print(f"Error: \'{zoom}\' is not a valid input.")
+
 
 while step_download:
-    #Creating directory for zoom-level
+    #Creating directory for chosen zoom-level
     if not os.path.exists(f"images/{str(zoom)}"):
         os.makedirs(f"images/{str(zoom)}")
 
@@ -65,6 +92,8 @@ while step_download:
 
 print("---")
 print("Step 2/2: Stitching the image")
+#Assumption: tiles will all have the same width and height (usually 256px*256px)
+
 #Getting names of all directories of current zoom-level
 list_cols = next(os.walk(f'images/{zoom}'))[1]
 #Converting names of directories into integers and sorting
