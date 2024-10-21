@@ -93,8 +93,8 @@ while step_download:
                                 f.close()
 
                                 uniquePixels = set(Image.open(f"images/{str(zoom)}/{str(y)}/{str(x)}.png").getdata())
-                                if len(uniquePixels) == 1:
-                                    os.remove(f"images/{str(zoom)}/{str(y)}/{str(x)}.png")
+                                #if len(uniquePixels) == 1:
+                                    #os.remove(f"images/{str(zoom)}/{str(y)}/{str(x)}.png")
                             except UnidentifiedImageError:
                                 os.remove(f"images/{str(zoom)}/{str(y)}/{str(x)}.png")
                                 rows = False
@@ -135,7 +135,7 @@ if not zoom == 0:
 
     (img_width, img_height) = Image.open(f'images/{str(zoom)}/{list_cols[0]}/{list_rows[0]}.png').size
 
-    result_rows = Image.new('RGB', (img_width, img_height * c_rows))
+    result_rows = Image.new('RGBA', (img_width, img_height * c_rows))
     for col in tqdm(range(c_cols), desc="Combining images in each column"):
         if not os.path.exists(f'images/{str(zoom)}/col{str(list_cols[col])}.png'):
             pbar = tqdm(total=c_rows+1, desc="", leave=False)
@@ -153,7 +153,7 @@ if not zoom == 0:
             pbar.update(1)
             pbar.close()
 
-    result = Image.new('RGB', (img_width * c_cols, img_height * c_rows))
+    result = Image.new('RGBA', (img_width * c_cols, img_height * c_rows))
     if not os.path.exists(f'images/image_zoom{str(zoom)}.png'):
         for img in tqdm(range(c_cols), desc="Combining all columns"):
             try:
