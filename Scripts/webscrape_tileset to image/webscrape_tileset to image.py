@@ -1,9 +1,10 @@
 import sys
 import os
 import requests
+import climage
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from PIL import Image, UnidentifiedImageError 
+from PIL import Image, UnidentifiedImageError
 from tqdm import tqdm
 from yaspin import yaspin
 
@@ -27,9 +28,17 @@ with yaspin(text="Accessing URL... (This may take a few seconds)", side="right",
         leaflet_tile = driver.find_element(By.CLASS_NAME, 'leaflet-tile')
         url = leaflet_tile.get_attribute("src")
         url = url.rstrip("1/0.png") #leaflet-tiles should be png (https://leafletjs.com/reference.html#tilelayer)
-    except Exception as e:
-        sys.exit(f"Error: Script can't find leaflet-tiles, check URL {url_orig}")
+        img_name = url_in.split('/')[-1]
+        if not os.path.exists(f"images/{img_name}"):
+            os.makedirs(f"images/{img_name}")
 
+        f = open(f"images/{img_name}/{img_name}_thumbnail.png",'wb')
+        f.write(requests.get(f"{url}/0/0/0.png").content)
+        f.close()
+        #print(climage.convert(f"images/{img_name}/thumbnail.png", is_unicode=True))
+        #input()
+    except Exception as e:
+        sys.exit(f"Error: Script can't find leaflet-tiles, check URL {url}")
 
 #Checking available zoom-levels
 with yaspin(text="Checking available zoom-levels", side="right", timer=True) as spinner:
@@ -63,21 +72,21 @@ while step_download:
     #Creating directory for chosen zoom-level
     if zoom == 0:
         data = requests.get(url + f"/{str(zoom)}/0/0.png").content
-        f = open(f'images/image_zoom{str(zoom)}.png','wb')
+        f = open(f'images/{img_name}/{img_name}_zoom{str(zoom)}.png','wb')
         f.write(data)
         f.close()
         step_download = False
     else:
-        if not os.path.exists(f"images/{str(zoom)}"):
-            os.makedirs(f"images/{str(zoom)}")
+        if not os.path.exists(f"images/{img_name}/{str(zoom)}"):
+            os.makedirs(f"images/{img_name}/{str(zoom)}")
 
         cols = True
         y = 0
         with tqdm(desc="Downloading tiles in column", unit="", total=pow(2,zoom)) as counter_cols:
             while cols:
                 #Creating a directory for each column
-                if not os.path.exists(f"images/{str(zoom)}/{str(y)}"):
-                        os.makedirs(f"images/{str(zoom)}/{str(y)}")
+                if not os.path.exists(f"images/{img_name}/{str(zoom)}/{str(y)}"):
+                        os.makedirs(f"images/{img_name}/{str(zoom)}/{str(y)}")
 
                 rows = True
                 x = 0
@@ -85,25 +94,25 @@ while step_download:
                 with tqdm(desc="Downloading tile", unit="", leave=False) as counter_tiles:
                     while rows:
                         #Downloading each image of column
-                        if not os.path.exists(f"images/{str(zoom)}/{str(y)}/{str(x)}.png"):
+                        if not os.path.exists(f"images/{img_name}/{str(zoom)}/{str(y)}/{str(x)}.png"):
                             try:
                                 data = requests.get(url + f"/{str(zoom)}/{str(y)}/{str(x)}.png").content
-                                f = open(f"images/{str(zoom)}/{str(y)}/{str(x)}.png",'wb')
+                                f = open(f"images/{img_name}/{str(zoom)}/{str(y)}/{str(x)}.png",'wb')
                                 f.write(data)
                                 f.close()
 
-                                uniquePixels = set(Image.open(f"images/{str(zoom)}/{str(y)}/{str(x)}.png").getdata())
-                                #if len(uniquePixels) == 1:
-                                    #os.remove(f"images/{str(zoom)}/{str(y)}/{str(x)}.png")
+                                uniquePixels = set(Image.open(f"images/{img_name}/{str(zoom)}/{str(y)}/{str(x)}.png").getdata())
+                                if len(uniquePixels) == 1:
+                                    os.remove(f"images/{img_name}/{str(zoom)}/{str(y)}/{str(x)}.png")
                             except UnidentifiedImageError:
-                                os.remove(f"images/{str(zoom)}/{str(y)}/{str(x)}.png")
+                                os.remove(f"images/{img_name}/{str(zoom)}/{str(y)}/{str(x)}.png")
                                 rows = False
                         x = x + 1
                         counter_tiles.update(1)
 
-                list_files = os.listdir(f"images/{str(zoom)}/{str(y)}")
+                list_files = os.listdir(f"images/{img_name}/{str(zoom)}/{str(y)}")
                 if not list_files:
-                    os.rmdir(f"images/{str(zoom)}/{str(y)}")
+                    os.rmdir(f"images/{img_name}/{str(zoom)}/{str(y)}")
                     cols = False
                 y = y + 1
                 counter_cols.update(1)
@@ -115,14 +124,14 @@ print("Step 2/2: Stitching the image")
 
 if not zoom == 0:
     #Getting names of all directories of current zoom-level
-    list_cols = next(os.walk(f'images/{zoom}'))[1]
+    list_cols = next(os.walk(f"images/{img_name}/{zoom}"))[1]
     #Converting names of directories into integers and sorting
     list_cols = list(map(int, list_cols))
     list_cols.sort()
     c_cols = len(list_cols)
 
     #Getting names of all files in  of current zoom-level
-    list_rows = next(os.walk(f'images/{zoom}/{list_cols[0]}'))[2]
+    list_rows = next(os.walk(f"images/{img_name}/{zoom}/{list_cols[0]}"))[2]
     list_rows_imgs = []
     for element in list_rows:
         if element.endswith(".png"):
@@ -133,37 +142,37 @@ if not zoom == 0:
     c_rows = len(list_rows)
 
 
-    (img_width, img_height) = Image.open(f'images/{str(zoom)}/{list_cols[0]}/{list_rows[0]}.png').size
+    (img_width, img_height) = Image.open(f"images/{img_name}/{str(zoom)}/{list_cols[0]}/{list_rows[0]}.png").size
 
     result_rows = Image.new('RGBA', (img_width, img_height * c_rows))
     for col in tqdm(range(c_cols), desc="Combining images in each column"):
-        if not os.path.exists(f'images/{str(zoom)}/col{str(list_cols[col])}.png'):
+        if not os.path.exists(f"images/{img_name}/{str(zoom)}/col{str(list_cols[col])}.png"):
             pbar = tqdm(total=c_rows+1, desc="", leave=False)
-            pbar.set_postfix_str("Stitching images...")
+            pbar.set_postfix_str("Stitching image...")
             for img in range(c_rows):
                 try: 
-                    result_rows.paste(im=Image.open(f'images/{str(zoom)}/{str(list_cols[col])}/{str(list_rows[img])}.png'), box=(0, img_height * img))
+                    result_rows.paste(im=Image.open(f'images/{img_name}/{str(zoom)}/{str(list_cols[col])}/{str(list_rows[img])}.png'), box=(0, img_height * img))
                     pbar.update(1)
                 except Exception as e:
                     pbar.close()
-                    sys.exit(f"{type(e).__name__} at: {f'images/{str(zoom)}/{str(list_cols[col])}/{str(list_rows[img])}.png'}")
+                    sys.exit(f"{type(e).__name__} at: {f'images/{img_name}/{str(zoom)}/{str(list_cols[col])}/{str(list_rows[img])}.png'}")
                     
             pbar.set_postfix_str("Saving image...")
-            result_rows.save(f'images/{str(zoom)}/col{str(list_cols[col])}.png')
+            result_rows.save(f'images/{img_name}/{str(zoom)}/col{str(list_cols[col])}.png')
             pbar.update(1)
             pbar.close()
 
     result = Image.new('RGBA', (img_width * c_cols, img_height * c_rows))
-    if not os.path.exists(f'images/image_zoom{str(zoom)}.png'):
+    if not os.path.exists(f'images/{img_name}/{img_name}_zoom{str(zoom)}.png'):
         for img in tqdm(range(c_cols), desc="Combining all columns"):
             try:
-                result.paste(im=Image.open(f'images/{str(zoom)}/col{str(list_cols[img])}.png'), box=(img_width * img, 0))
+                result.paste(im=Image.open(f'images/{img_name}/{str(zoom)}/col{str(list_cols[img])}.png'), box=(img_width * img, 0))
             except:
                 tqdm.close()
-                sys.exit(f"Failure at: {f'images/{str(zoom)}/col{str(list_cols[img])}.png'}")
+                sys.exit(f"Failure at: {f'images/{img_name}/{str(zoom)}/col{str(list_cols[img])}.png'}")
         
         with yaspin(text="Saving image... (This may take a while)", side="right", timer=True) as spinner:
-            result.save(f'images/image_zoom{str(zoom)}.png')
+            result.save(f'images/{img_name}/{img_name}_zoom{str(zoom)}.png')
 
         print("---")
         with yaspin(text="Opening final image...", side="right") as spinner:
@@ -175,6 +184,6 @@ if not zoom == 0:
 else:
     print("---")
     print("Opening final image...")
-    final = Image.open(f'images/image_zoom{str(zoom)}.png')
+    final = Image.open(f'images/{img_name}/{img_name}_zoom{str(zoom)}.png')
     final.show()
     print("Finished!")
