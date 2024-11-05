@@ -65,7 +65,9 @@ loc_tz = "EST"
 loc_lat = 52.520008
 loc_lng = 13.404954
 
+#print(datetime.now())
 today = datetime.now()
+today = datetime.fromisoformat('2024-12-24')
 yesterday = today - timedelta(days = 1)
 
 ### Fetching data from API ###
@@ -97,14 +99,25 @@ day_0 = datetime.fromisoformat(json_data['data'][0]['time'])
 sunrise_0 = datetime.fromisoformat(json_data['data'][0]['sunrise']).astimezone()
 sunset_0 = datetime.fromisoformat(json_data['data'][0]['sunset']).astimezone()
 
+print(day_0)
+print(sunrise_0)
+print(sunset_0)
+
 day_1 = datetime.fromisoformat(json_data['data'][1]['time'])
 sunrise_1 = datetime.fromisoformat(json_data['data'][1]['sunrise']).astimezone()
 sunset_1 = datetime.fromisoformat(json_data['data'][1]['sunset']).astimezone()
+
+print(day_1)
+print(sunrise_1)
+print(sunset_1)
 
 delta_0 = sunset_0 - sunrise_0
 delta_1 = sunset_1 - sunrise_1
 
 ### Dealing with winter/summer solstice ###
+diff_neg = False
+diff = delta_1 - delta_0
+
 epoch = Sun.get_equinox_solstice(datetime.now().year, target="winter")
 y, m, d, h, mi, s = epoch.get_full_date()
 day_solstice_winter = "{}/{}/{}".format(y, m, d)
@@ -146,19 +159,26 @@ if exists("./data/data_winter_solstice_" + datetime.now().strftime('%Y') + ".jso
         json.dump(json_data_winter_solstice, f)
 
 
-diff_neg = False
 diff = delta_1 - delta_0
 
 ### Generating text of toot ###
 toot_lines = [
     "#HereComesTheSun 🌞 for #" + loc_name +" on " + day_1.strftime("%a, %b %d") + ":",
-    "The sun rises at "+ sunrise_1.strftime("%H:%M") + " and sets at "+ sunset_1.strftime("%H:%M") + ".",
+    "The sun rises at "+ sunrise_1.strftime("%H:%M %p") + " and sets at "+ sunset_1.strftime("%H:%M %p") + ".",
     "We will see 0" + str(delta_1) + " of daylight.\n\n"
 ]
 toot = "\n".join(toot_lines)
 
+
+if diff_neg:
+    diff_calc = timedelta(days=1) + diff
+    diff_calc = timedelta(days=1).total_seconds() - diff_calc.total_seconds()
+    diff_total = time.fromisoformat("0" + str(timedelta(seconds=diff_calc)))
+else:
+    diff_total = time.fromisoformat("0" + str(diff))
+
+
 # Parsing str(delta_1) as whole sentence
-diff_total = time.fromisoformat("0" + str(diff))
 diff_sec = int(diff_total.strftime('%S'))
 diff_min = int(diff_total.strftime('%M'))
 diff_hour = int(diff_total.strftime('%H'))
@@ -224,7 +244,7 @@ else:
     elif and_sec == True and and_min == True and and_hour == True:
         toot = toot + "That's " + diff_hour_str + ", " + diff_min_str + " and " + diff_sec_str +" more than yesterday!"
     
-    json_data_winter_solstice = json.load(open('./data/data_winter_solstice_2023.json'))
+    json_data_winter_solstice = json.load(open('/home/schoeneh/bots_mastodon/sunofberlin/data/data_winter_solstice_2023.json'))
     sunrise_winter_solstice = datetime.fromisoformat(json_data_winter_solstice['data'][0]['sunrise']).astimezone()
     sunset_winter_solstice  = datetime.fromisoformat(json_data_winter_solstice['data'][0]['sunset']).astimezone()
     amount_winter_solstice = sunset_winter_solstice - sunrise_winter_solstice
@@ -254,7 +274,8 @@ if test == False:
     mastodon.status_post(toot, media_ids=img_dict)
     sleep(120)
 elif test == True:
-    mastodon.status_post(toot, media_ids=img_dict, spoiler_text="Testing")
+    #toot = "Testing"
+    mastodon.status_post(toot, media_ids=img_dict, spoiler_text="Testing, via hosting on astroids")
     print("Tooted!")
 else:
     print(toot)
