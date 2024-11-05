@@ -21,7 +21,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-    Modified 2022-12-29 by using code by Joerg Jaspert <joerg@ganneff.de>
+    Modified 2022-12-29 by using code created by Joerg Jaspert <joerg@ganneff.de>
     https://codeberg.org/Fulda.Social/herecomesthesun/src/branch/main/Bot_HereComesTheSun_Fulda.py
 
     https://github.com/halcy/Mastodon.py
