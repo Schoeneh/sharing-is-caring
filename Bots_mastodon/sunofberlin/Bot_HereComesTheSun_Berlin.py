@@ -3,9 +3,9 @@
 '''
     author: Henrik Schoenemann
     created on: 2022-12-29
-    last update: 2023-12-28
+    last update: 2024-11-05
 
-    Copyright (C) 2023 Henrik Schoenemann
+    GPLv3 2024 Henrik Schoenemann
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
