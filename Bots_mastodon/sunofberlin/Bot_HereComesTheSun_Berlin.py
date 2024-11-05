@@ -39,7 +39,7 @@ from time import sleep
 from pymeeus.Sun import Sun
 from mastodon import Mastodon
 
-test = True
+test = False
 
 ### App registration and authentication ###
 if exists("./mastodonpy_clientcred.secret") == False:
