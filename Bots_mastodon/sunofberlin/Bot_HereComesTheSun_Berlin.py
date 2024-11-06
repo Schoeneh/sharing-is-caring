@@ -67,7 +67,6 @@ loc_lng = 13.404954
 
 #print(datetime.now())
 today = datetime.now()
-today = datetime.fromisoformat('2024-12-24')
 yesterday = today - timedelta(days = 1)
 
 ### Fetching data from API ###
