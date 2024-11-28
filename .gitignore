@@ -68,3 +68,6 @@ $RECYCLE.BIN/
 # LibreOffice locks
 .~lock.*#
 *.bak
+
+# Affinity Publisher
+*.afpub~lock~
