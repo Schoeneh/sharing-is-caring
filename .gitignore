@@ -3,6 +3,7 @@
 
 # Ignore specific data-directories in repo
 /Scripts/webscrape_tileset to image/Images
+/Art/(Zeiten)Wendekorpus/data
 
 # Notepad++
 .bak
