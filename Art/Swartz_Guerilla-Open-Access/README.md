@@ -1,5 +1,5 @@
-# Don't Panic. Organize!
-![A black and white image featuring a stylized hitchhiker-like thumbs-up gesture inside a circle representing a planet, orbited by a ring. Below the symbol, the text "DON'T PANIC" is written in bold, uppercase letters, followed by "ORGANIZE!" in a similar style.](https://github.com/Schoeneh/sharing-is-caring/blob/main/Art/dontpanic_organize/don't%20panic_organize.png)
+# Sharing isn't immoral
+![A black and white image featuring a stylized hitchhiker-like thumbs-up gesture inside a circle representing a planet, orbited by a ring. Below the symbol, the text "DON'T PANIC" is written in bold, uppercase letters, followed by "ORGANIZE!" in a similar style.](https://github.com/Schoeneh/sharing-is-caring/blob/main/Art/Swartz_Guerilla-Open-Access/Swartz_GOA_Sharing.png)
 # License
 ## CC0 1.0 Universal
 
