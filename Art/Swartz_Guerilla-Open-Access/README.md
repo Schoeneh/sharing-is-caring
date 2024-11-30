@@ -1,5 +1,7 @@
 # Sharing isn't immoral
-![A black and white image featuring a stylized hitchhiker-like thumbs-up gesture inside a circle representing a planet, orbited by a ring. Below the symbol, the text "DON'T PANIC" is written in bold, uppercase letters, followed by "ORGANIZE!" in a similar style.](https://github.com/Schoeneh/sharing-is-caring/blob/main/Art/Swartz_Guerilla-Open-Access/Swartz_GOA_Sharing.png)
+![A black and white illustration of Aaron Swartz, a prominent internet activist, is shown next to a quote from his "Guerrilla Open Access Manifesto."  The quote reads, "Sharing isn't immoral—it's a moral imperative."  The image features a stylized sketch of Swartz's face and shoulders.](https://github.com/Schoeneh/sharing-is-caring/blob/main/Art/Swartz_Guerilla-Open-Access/Swartz_GOA_Sharing.png)
+# Banquet of Knowledge
+![A black and white illustration of Aaron Swartz, accompanied by a quote from his "Guerrilla Open Access Manifesto."  The quote discusses the responsibility of those with access to knowledge to share it with the world: »Those with access — you have been given a privilege. You get to feed at this banquet of knowledge while the rest of the world is locked out. You have a duty to share it with the world.«](https://github.com/Schoeneh/sharing-is-caring/blob/main/Art/Swartz_Guerilla-Open-Access/Swartz_GOA_Banquet.png)
 # License
 ## CC0 1.0 Universal
 
